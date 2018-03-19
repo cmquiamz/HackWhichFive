@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1ECF4D20604ADD005ADE1F /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ECF4C20604ADD005ADE1F /* Property List.plist */; };
+		7F1ECF4F2060525B005ADE1F /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1ECF4E2060525B005ADE1F /* detailViewController.swift */; };
 		7F8E162B20449A66004CA0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E162A20449A66004CA0ED /* AppDelegate.swift */; };
 		7F8E162D20449A66004CA0ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E162C20449A66004CA0ED /* ViewController.swift */; };
 		7F8E163020449A66004CA0ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F8E162E20449A66004CA0ED /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F1ECF4C20604ADD005ADE1F /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		7F1ECF4E2060525B005ADE1F /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		7F8E162720449A66004CA0ED /* HackWhichFive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackWhichFive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8E162A20449A66004CA0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F8E162C20449A66004CA0ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +47,7 @@
 		7F8E163620449A66004CA0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F8E163B20449A67004CA0ED /* HackWhichFiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackWhichFiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8E163F20449A67004CA0ED /* HackWhichFiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackWhichFiveTests.swift; sourceTree = "<group>"; };
-		7F8E164120449A67004CA0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F8E164120449A67004CA0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = HackWhichFiveTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		7F8E164620449A67004CA0ED /* HackWhichFiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackWhichFiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8E164A20449A67004CA0ED /* HackWhichFiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackWhichFiveUITests.swift; sourceTree = "<group>"; };
 		7F8E164C20449A67004CA0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,9 +103,11 @@
 			children = (
 				7F8E162A20449A66004CA0ED /* AppDelegate.swift */,
 				7F8E162C20449A66004CA0ED /* ViewController.swift */,
+				7F1ECF4E2060525B005ADE1F /* detailViewController.swift */,
 				7F8E162E20449A66004CA0ED /* Main.storyboard */,
 				7F8E163120449A66004CA0ED /* Assets.xcassets */,
 				7F8E163320449A66004CA0ED /* LaunchScreen.storyboard */,
+				7F1ECF4C20604ADD005ADE1F /* Property List.plist */,
 				7F8E163620449A66004CA0ED /* Info.plist */,
 			);
 			path = HackWhichFive;
@@ -234,6 +240,7 @@
 			files = (
 				7F8E163520449A66004CA0ED /* LaunchScreen.storyboard in Resources */,
 				7F8E163220449A66004CA0ED /* Assets.xcassets in Resources */,
+				7F1ECF4D20604ADD005ADE1F /* Property List.plist in Resources */,
 				7F8E163020449A66004CA0ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +268,7 @@
 			files = (
 				7F8E162D20449A66004CA0ED /* ViewController.swift in Sources */,
 				7F8E162B20449A66004CA0ED /* AppDelegate.swift in Sources */,
+				7F1ECF4F2060525B005ADE1F /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
