@@ -2,9 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>restaurantDescription</key>
+	<array>
+		<string>Aloha and welcome to the new Kalapawai Cafe &amp; Deli – Kapolei! We pride ourselves in providing the most delicious coffee, deli sandwiches, lunch plates, salads &amp; pizzas to the heart of Kapolei while keeping the same friendly, neighborhood service that has made our two Kailua locations into perennial Hale’Aina and ‘Ilima Award winners for “Favorite Neighborhood Restaurant,” “Best Gourmet Comfort Food,” “Critic’s Choice” &amp; “People’s Choice.”</string>
+		<string>Our Mission is to serve healthy, good quality Japanese &quot;comfort food&quot; with 
+a local flair. We take pride in providing outstanding food, at a great price in a 
+bright, clean and modern atmosphere. Our unique and nutritious broth simmers 
+for over 12 hours daily. Come in today to enjoy our crisp, juicy gyoza, generous 
+portions of Kim Chee or Shrimp Fried Rice, heaping plates of Chicken Katsu Curry, Seafood Crispy Noodle, and sumptuous Ramen. With cordial, fast, and friendly service - customers always leave with a satisfied smile… more often than not toting the next day&apos;s lunch!</string>
+		<string>The Cheesecake Factory is a unique, upscale casual dining restaurant offering more than 250 menu selections including appetizers, pizza, pasta, seafood, steaks, salads, sandwiches and more. But save room for dessert! Try one of 50 delicious cheesecakes and desserts.</string>
+		<string>California Pizza Kitchen is an elevated casual-dining restaurant serving California creativity in every meal. Its innovative menu highlights bold, global flavors and the freshest seasonal ingredients, from artisan hand-tossed pizzas like the iconic Original BBQ Chicken to unique, premium mains like a Fire-Grilled Ribeye and Wild Caught Sesame Seared Ahi, imaginative small plates, salads, pastas and hand-crafted cocktails.</string>
+		<string>A simple conveyor-belt sushi restaurant offering classic rolls &amp; Japanese eats in an informal setting.</string>
+		<string>The Johnny Rockets Group Inc. is an American restaurant franchise whose themed decor is based upon 1950s diner-style restaurants.</string>
+	</array>
 	<key>restaurantImages</key>
 	<array>
 		<string>kapoleiKalapawai</string>
+		<string>ramenYa</string>
+		<string>cheesecakeFactory</string>
+		<string>californiaPizzaKitchen</string>
+		<string>sushiBay</string>
+		<string>johnnyRockets</string>
 	</array>
 </dict>
 </plist>

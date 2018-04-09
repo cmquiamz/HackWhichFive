@@ -12,26 +12,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 //Define an array of variable using an array literal with 5 items of type string
     
+    @IBOutlet var navigationTitleOne: UINavigationItem!
     @IBOutlet var tableView: UITableView!
-    var greetingArray = ["Hello", "Aloha", "Good Morning", "Howzit", "Sup"]
     
-    var kapoleiRestaurantArray = ["Kapolei Kalapawai"]
-    
+    var kapoleiRestaurantArray = ["Kapolei Kalapawai", "Ramen Ya", "Cheesecake Factory", "California Pizza Kitchen", "Sushi Bay", "Johnny Rockets"]
     var restaurantImageData = [String]()
+    var descriptionData = [String] ()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    self.navigationTitleOne.title = "Kapolei Eats"
+        
         tableView.dataSource = self
         tableView.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
-    //Set VC as delegate
         
+    //Set VC as delegate
         self.tableView.dataSource = self
         
         let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
         
         restaurantImageData = dict!.object(forKey: "restaurantImages") as! [String]
+        descriptionData = dict!.object(forKey: "restaurantDescription") as! [String]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,8 +68,10 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let s1 = segue.destination as! detailViewController
         let imageIndex = tableView.indexPathForSelectedRow?.row
         s1.imagePass = restaurantImageData[imageIndex!]
-        }
-    
+        s1.textPass = descriptionData[imageIndex!]
+    }
+        
+        
     }
     
     

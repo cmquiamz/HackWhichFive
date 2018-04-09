@@ -1,35 +1,27 @@
 //
-//  detailViewController.swift
+//  viewControllerTwoViewController.swift
 //  HackWhichFive
 //
-//  Created by CM Student on 3/19/18.
+//  Created by CM Student on 4/9/18.
 //  Copyright © 2018 CM Student. All rights reserved.
 //
 
 import UIKit
 
-class detailViewController: UIViewController {
+class viewControllerTwoViewController: UIViewController {
 
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var textView: UITextView!
     
-    var imagePass: String?
-    var textPass: String?
+    @IBOutlet var navitgationTitleTwo: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       self.navitgationTitleTwo.title = "Eatery Locations"
 
-        // Do any additional setup after loading the view.
-        
-        if let imageName = imagePass {
-            imageView.image = UIImage(named: imageName)
-        }
-        
-        if let description = textPass {
-            textView.text = description
+       
     }
 
-        func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -45,4 +37,4 @@ class detailViewController: UIViewController {
     }
     */
 
-    }}
+}
