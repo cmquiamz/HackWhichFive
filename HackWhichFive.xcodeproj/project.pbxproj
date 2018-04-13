@@ -17,6 +17,7 @@
 		7F8E163520449A66004CA0ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F8E163320449A66004CA0ED /* LaunchScreen.storyboard */; };
 		7F8E164020449A67004CA0ED /* HackWhichFiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E163F20449A67004CA0ED /* HackWhichFiveTests.swift */; };
 		7F8E164B20449A67004CA0ED /* HackWhichFiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E164A20449A67004CA0ED /* HackWhichFiveUITests.swift */; };
+		7FE73D972080315700DC5FE4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE73D962080315700DC5FE4 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7F8E164620449A67004CA0ED /* HackWhichFiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackWhichFiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8E164A20449A67004CA0ED /* HackWhichFiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackWhichFiveUITests.swift; sourceTree = "<group>"; };
 		7F8E164C20449A67004CA0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FE73D962080315700DC5FE4 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		7F8E161E20449A66004CA0ED = {
 			isa = PBXGroup;
 			children = (
+				7FE73D962080315700DC5FE4 /* Restaurant.swift */,
 				7F7D56A6207C0DF5009B44CA /* viewControllerTwoViewController.swift */,
 				7F8E162920449A66004CA0ED /* HackWhichFive */,
 				7F8E163E20449A67004CA0ED /* HackWhichFiveTests */,
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					7F8E162620449A66004CA0ED = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					7F8E163A20449A67004CA0ED = {
@@ -269,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE73D972080315700DC5FE4 /* Restaurant.swift in Sources */,
 				7F7D56A7207C0DF5009B44CA /* viewControllerTwoViewController.swift in Sources */,
 				7F8E162D20449A66004CA0ED /* ViewController.swift in Sources */,
 				7F8E162B20449A66004CA0ED /* AppDelegate.swift in Sources */,
@@ -438,11 +443,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HackWhichFive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UHWO.HackWhichFive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HackWhichFive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

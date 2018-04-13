@@ -28,7 +28,9 @@ class detailViewController: UIViewController {
         if let description = textPass {
             textView.text = description
     }
-
+        
+self.view.backgroundColor = UIColor.lightGray
+        
         func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

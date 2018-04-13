@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    self.navigationTitleOne.title = "Kapolei Eats"
+    self.navigationTitleOne.title = "My Favorite Restaurants in Kapolei"
         
         tableView.dataSource = self
         tableView.delegate = self

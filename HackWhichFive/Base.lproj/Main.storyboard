@@ -94,17 +94,24 @@
                     <view key="view" contentMode="scaleToFill" id="h6O-z3-ALB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hSI-eU-FGx">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="6sv-se-sL7"/>
                     </view>
                     <navigationItem key="navigationItem" id="KGB-nT-G8D"/>
                     <connections>
+                        <outlet property="mapView" destination="hSI-eU-FGx" id="oI4-Jy-rGl"/>
                         <outlet property="navitgationTitleTwo" destination="KGB-nT-G8D" id="bBp-Ak-2gh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLP-a1-GLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-405" y="505"/>
+            <point key="canvasLocation" x="-405" y="504.92957746478874"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="QfD-Pw-A8s">
