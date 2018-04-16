@@ -15,14 +15,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet var navigationTitleOne: UINavigationItem!
     @IBOutlet var tableView: UITableView!
     
+ 
     var kapoleiRestaurantArray = ["Kapolei Kalapawai", "Ramen Ya", "Cheesecake Factory", "California Pizza Kitchen", "Sushi Bay", "Johnny Rockets"]
     var restaurantImageData = [String]()
     var descriptionData = [String] ()
+    var titleData = [String] ()
+    
+ 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    self.navigationTitleOne.title = "My Favorite Restaurants in Kapolei"
+    self.navigationTitleOne.title = "Kapolei Eats"
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -35,6 +39,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         restaurantImageData = dict!.object(forKey: "restaurantImages") as! [String]
         descriptionData = dict!.object(forKey: "restaurantDescription") as! [String]
+        titleData = dict!.object(forKey: "restaurantTitles") as! [String]
+    
         
     }
 
@@ -46,6 +52,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return kapoleiRestaurantArray.count
 }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "My Favorite Restaurants in Kapolei"
+    }
+    
     
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     //set up cell to display items in greetingArray
@@ -62,6 +73,9 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath as IndexPath, animated: true)
     }
     
+
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "mySegue"
     {
@@ -69,6 +83,7 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let imageIndex = tableView.indexPathForSelectedRow?.row
         s1.imagePass = restaurantImageData[imageIndex!]
         s1.textPass = descriptionData[imageIndex!]
+        s1.titlePass = titleData[imageIndex!]
     }
         
         

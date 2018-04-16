@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>restaurantTitles</key>
+	<array>
+		<string>Kapolei Kalapawai</string>
+		<string>Ramen Ya</string>
+		<string>Cheesecake Factory</string>
+		<string>California Pizza Kitchen</string>
+		<string>Sushi Bay</string>
+		<string>Johnny Rockets</string>
+	</array>
 	<key>restaurantDescription</key>
 	<array>
 		<string>Aloha and welcome to the new Kalapawai Cafe &amp; Deli – Kapolei! We pride ourselves in providing the most delicious coffee, deli sandwiches, lunch plates, salads &amp; pizzas to the heart of Kapolei while keeping the same friendly, neighborhood service that has made our two Kailua locations into perennial Hale’Aina and ‘Ilima Award winners for “Favorite Neighborhood Restaurant,” “Best Gourmet Comfort Food,” “Critic’s Choice” &amp; “People’s Choice.”</string>

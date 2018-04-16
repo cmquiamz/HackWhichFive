@@ -13,8 +13,11 @@ class detailViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var textView: UITextView!
     
+    
+    
     var imagePass: String?
     var textPass: String?
+    var titlePass: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,9 @@ class detailViewController: UIViewController {
         if let description = textPass {
             textView.text = description
     }
+        if let title = titlePass {
+            self.title = title 
+        }
         
 self.view.backgroundColor = UIColor.lightGray
         
